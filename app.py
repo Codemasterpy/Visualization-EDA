@@ -17,10 +17,10 @@ import seaborn as sns
 def main():
 	"""Semi Automated ML App with Streamlit """
 
-	activities = ["EDA","Plots"]	
-	choice = st.sidebar.selectbox("Select Activities",activities)
+	work = ["EDA","EDA(Explanatory)"]	
+	select = st.sidebar.selectbox("Select Activities",work)
 
-	if choice == 'EDA':
+	if select == 'EDA':
 		st.subheader("Exploratory Data Analysis")
 
 		data = st.file_uploader("Upload a Dataset", type=["csv", "txt"])
@@ -65,7 +65,7 @@ def main():
 
 
 
-	elif choice == 'Plots':
+	elif choice == 'EDA(Explanatory)':
 		st.subheader("Data Visualization")
 		data = st.file_uploader("Upload a Dataset", type=["csv", "txt", "xlsx"])
 		if data is not None:
