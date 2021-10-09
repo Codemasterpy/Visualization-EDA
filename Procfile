@@ -1,1 +1,1 @@
-echo web: streamlit run main.py
+echo web:streamlit run main.py
